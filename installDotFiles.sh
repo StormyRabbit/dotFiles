@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-dir=~/storage/Projects/dotFiles
+dir=~/Projects/dotFiles
 files="vimrc bashrc xinitrc"
 
 for file in $files; do

@@ -31,6 +31,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
 Plug 'dylanaraps/wal.vim'
+Plug 'metakirby5/codi.vim'
 call plug#end()
 
 colorscheme wal
