@@ -39,6 +39,9 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
 Plug 'adimit/prolog.vim'
+Plug 'metakirby5/codi.vim'
+Plug 'vim-erlang/vim-erlang-runtime'
+
 call plug#end()
 colorscheme dracula
 let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
