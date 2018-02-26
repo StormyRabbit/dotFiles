@@ -2,7 +2,6 @@
 
 dir=~/Projects/dotFiles
 files="vimrc bashrc xinitrc Xdefaults"
-
 for file in $files; do
 	echo "Removing existing dotfiles..."
 	rm ~/.$file
