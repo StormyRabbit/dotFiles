@@ -4,7 +4,6 @@ set encoding=utf-8
 set clipboard=unnamed
 let python_highlight_all=1
 syntax on
-let python_highlight_all = 1
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
@@ -37,6 +36,9 @@ au BufNewFile,BufRead *.py
     \ set autoindent
     \ set fileformat=unix
 
+" NERD TREE
+map <C-n> :NERDTreeToggle<CR>
+
 " js html and css iad *.jndentation
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
@@ -45,7 +47,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -74,4 +75,5 @@ Plug 'nvie/vim-flake8'
 
 call plug#end()
 colorscheme dracula
+let g:ycm_server_python_interpreter = '/usr/bin/python2'
 let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
